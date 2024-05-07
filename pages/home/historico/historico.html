@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histórico de Tarefas</title>
+    <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="historico_estilos.css">
 </head>
 <body>
-    
+    <header class="historico__cabecalho">
+        <!-- cabeçalho -->
+        <div class="historico__cabecalho--logo">
+            <img src="/src/imagens/sQpets.png" alt="Logo sQpets em azul com a letra q em laranja">
+        </div>
+        <div class="historico__cabecalho--icones">
+            <img src="/src/imagens/task-navbar.png" alt="ícone de uma prancheta em azul representando as tarefas">
+            <img src="/src/imagens/sequencia-navbar.png" alt="ícone de uma bandeira laranja com uma estrela no meio representando a sequencia">
+            <img src="/src/imagens/pet-navbar.png" alt="ícone de uma capivara feliz representando o pet">
+            <img src="/src/imagens/energy-navbar.png" alt="ícone de energia em laranja">
+        </div>
+        <div class="historico__cabecalho--usuario">
+            <img src="/src/imagens/user-navbar.png" alt="">
+        </div>
+    </header>
+    <body class="historico__body">
+        <div class="historico__body--conteiner">
+            <!-- Conteiner de tarefas -->
+            <div class="historico__task--diario">
+                <span class="historico__task--titulo">Hoje</span>
+                <div class="historico__task--tarefa">
+                    <input type="checkbox" name="task" id="task">
+                    <label for="task">Curso JS</label>
+                    <span class="historico__task--tag tag1">programação</span>
+                    <span class="historico__task--tempo">01:00</span>
+                </div>
+                <div class="historico__task--tarefa">
+                    <input type="checkbox" name="task" id="task">
+                    <label for="task">Caminhada</label>
+                    <span class="historico__task--tag tag2">exercício</span>
+                    <span class="historico__task--tempo">00:30</span>
+                </div>
+                <div class="historico__task--tarefa">
+                    <input type="checkbox" name="task" id="task">
+                    <label for="task">leitura</label>
+                    <span class="historico__task--tag tag3">leitura</span>
+                    <span class="historico__task--tempo">00:20</span>
+                </div>
+            </div>
+            
+            <div class="historico__task--diario">
+                <span class="historico__task--titulo">Ontem</span>
+                <div class="historico__task--tarefa">
+                    <input type="checkbox" name="task" id="task">
+                    <label for="task">Curso JS</label>
+                    <span class="historico__task--tag tag1">programação</span>
+                    <span class="historico__task--tempo">01:00</span>
+                </div>
+                <div class="historico__task--tarefa">
+                    <input type="checkbox" name="task" id="task">
+                    <label for="task">Caminhada</label>
+                    <span class="historico__task--tag tag2">exercício</span>
+                    <span class="historico__task--tempo">00:30</span>
+                </div>
+                <div class="historico__task--tarefa">
+                    <input type="checkbox" name="task" id="task">
+                    <label for="task">leitura</label>
+                    <span class="historico__task--tag tag3">leitura</span>
+                    <span class="historico__task--tempo">00:20</span>
+                </div>
+            </div>
+        </div>
+    </body>
 </body>
 </html>
