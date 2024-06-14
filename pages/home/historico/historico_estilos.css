@@ -1,18 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
 
 :root {
+    --bg-color: rgba(255, 255, 255, 1);
+    --cabecalho: rgba(232, 252, 255, 1);
+    --task-1: rgba(47, 174, 191, 1);
+    --task-2: rgba(243, 113, 45, 1);
+    --task-3: rgba(26, 54, 74, 1);
+    --font-color: rgba(47, 174, 191, 1);
+    --font: "Zen Maru Gothic", serif;
+}
+
+.dark-mode:root {
     --bg-color: rgba(11, 53, 83, 1);
-    --titulo: rgba(255, 255, 255, 1);
+    --cabecalho: rgba(47, 174, 191, 1);
     --task-1: rgba(47, 174, 191, 1);
     --task-2: rgba(243, 113, 45, 1);
     --task-3: rgba(255, 250, 128, 1);
     --font-color: rgba(190, 247, 255, 1);
-    --font: "Zen Maru Gothic", serif;
 }
 
-* {
+html {
     font-family: var(--font);
     font-weight: 700;
-    background-color: var(--bg-color);
+}
+/* INICIO CABEÇALHO */
+.historico__cabecalho {
+    background-color: var(--cabecalho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    height: 148px;
 }
 
+.historico__cabecalho--logo {
+    width: 262px;
+    margin-left: 90px;
+}
+
+.historico__cabecalho--icones {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.historico__cabecalho--usuario {
+    margin-right: 141px;
+}
+
+/* INICIO BODY */
+.historico__task--diario {
+    display: flex;
+    flex-direction: column;
+    padding: 0 229px;
+    gap: 48px;
+}
+
+.historico__task--titulo {
+    color: var(--font-color);
+    font-size: 4rem;
+    margin-top: 56px;
+}
+
+.historico__task--tarefa {
+    border: 3px solid var(--task-1);
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    font-size: 2.25rem;
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tag2 {
+    border-color: var(--task-2)
+}
